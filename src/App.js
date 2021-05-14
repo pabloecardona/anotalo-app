@@ -71,7 +71,7 @@ export default function App () {
   return (
     <div className='App'>
       <Message />
-      <form onSubmit={addNote}>
+      <form onSubmit={addNote} className='form'>
         <input value={newNote} onChange={handleNewNote} />
         <button type='submit'>Agregar nota</button>
       </form>
