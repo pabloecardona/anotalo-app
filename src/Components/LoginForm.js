@@ -1,19 +1,20 @@
+/* eslint-disable camelcase */
 // formulario de inicio de sesión. Se encarga de corroborar si el usuario y la contraseña son correctos
 // en caso de serlo almacena de forma local el token y además se lo pasa al componente del formulario de notas para que al
 // crear una nota ya tenga el token. Además le pasa la información del usuario a la app para que lo guarde en su estado
 // y esté disponible para otros componentes también
 
 import { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { Notification } from './Notification'
 import Togglable from './Togglable'
 import { setToken } from '../services/notes'
 import loginService from '../services/login'
 
-export default function LoginForm ({
-  setAppUser
-}) {
-  const [errorMessage, setErrorMesage] = useState(null)
+const no_op = () => {}
 
+export default function LoginForm ({ setAppUser = no_op }) {
+  const [errorMessage, setErrorMesage] = useState(null)
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
@@ -88,4 +89,8 @@ export default function LoginForm ({
       </form>
     </Togglable>
   )
+}
+
+LoginForm.propTypes = {
+  setAppUser: PropTypes.func.isRequired
 }
