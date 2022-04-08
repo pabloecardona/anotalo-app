@@ -1,3 +1,7 @@
+# 📝 Notes app. To keep registry of your personal notes
+this project was developed to provide a simple note-taking tool, even for the grocery list. 
+I applied the knowledge acquired at the helsinki university bootcamp.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
