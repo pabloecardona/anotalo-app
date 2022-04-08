@@ -1,4 +1,4 @@
-# 📝 Notes app. To keep registry of your personal notes
+# 📝 Anotalo app. To keep registry of your personal notes
 This project was developed to provide a simple note-taking tool, even for the grocery list. 
 I applied the knowledge acquired at the helsinki university bootcamp.
 
